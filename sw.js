@@ -5,8 +5,8 @@ const CACHE_NAME = 'v1_cache_Cuadro_de_Lista_y_Texto',
     './',
     './estilo.css',
     './script.js',
-    '././icono_144.png',
-    './iconos/icono_128.png.png'
+    './icono_144.png',
+    './icono_128.png.png'
   ]
 
 //durante la fase de instalación, generalmente se almacena en caché los activos estáticos
