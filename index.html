@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Escribir y visualizar</title>
+    <link rel="stylesheet" type="text/css" href="./estilo.css">
+    <meta name="viewport" content="width=device-width,  initial-scale=1.0">
+    <link rel="manifest" href="./manifest.json">
+</head>
+<body>
+    <section>
+        <h1>Cuadro de Lista y Texto</h1>
+            <!-- Cuadro de texto para ingresar elementos -->
+            <div class="input">
+            <input type="text" id="inputText" placeholder="Ingresa un Texto">
+            </div>
+                <div>
+                    <button id="aceptarButton">Agregar</button>
+                </div>
+                    <!-- Lista para mostrar elementos ingresados -->
+                    <ul id="listaElementos">
+                    </ul>   
+    </section>
+    <!-- Agregar el script.js -->
+    <script src="script.js"></script>
+    <script>
+        if ('serviceWorker' in navigator) {
+          navigator.serviceWorker.register('/sw.js')
+            .then(function(registration) {
+              console.log('Service Worker registrado con éxito:', registration);
+            })
+            .catch(function(error) {
+              console.log('Error al registrar el Service Worker:', error);
+            });
+        }
+      </script>
+      
+</body>
+</html>

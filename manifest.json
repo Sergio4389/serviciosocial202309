@@ -1,0 +1,33 @@
+{
+    "name": "Escribir y visualizar",
+    "short_name": "Cuadro de Lista y Texto",
+    "start_url": "index.html",
+    "display": "standalone",
+    "background_color": "#252fb3",
+    "theme_color": "#007bff",
+    "orientation": "portrait",
+    "scope":"./",
+    "icons": [
+      {
+        "src": "./icono_144.png",
+        "sizes": "144x144",
+        "type": "image/png"
+      },
+      {
+        "src": "./iconos/icono_128.png",
+        "sizes": "128x128",
+        "type": "image/png"
+      },
+      {
+        "src": "./iconos/icono_96.png",
+        "sizes": "96x96",
+        "type": "image/png"
+      },
+      {
+        "src": "./iconos/icono_64.png",
+        "sizes": "64x64",
+        "type": "image/png"
+      }
+    ]
+}
+  
