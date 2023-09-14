@@ -86,8 +86,6 @@ function cargarListaDesdeLocalStorage() {
             li.remove();
             guardarListaEnLocalStorage();
         });
-
-
         // Agregamos el botón "X" al elemento de lista.
         li.appendChild(botonEliminar);
 
