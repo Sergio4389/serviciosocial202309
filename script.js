@@ -93,4 +93,8 @@ function cargarListaDesdeLocalStorage() {
 
         listaElementos.appendChild(li);
     });
+    window.addEventListener('beforeinstallprompt', (e) => {
+  // Personalizar el mensaje y mostrarlo cuando sea apropiado
+  e.prompt();
+});
 }
