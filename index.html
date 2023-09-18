@@ -18,7 +18,29 @@
         <input type="password" id="password" name="password" required><br><br>
         <input type="submit" value="Iniciar sesión">
     </form>
-     <div id="message"></div>
+
+    <div id="message"></div>
+
+    <button id="redirectToQuestionnaire" style="display:none">Ir al cuestionario</button>
+
+    <script>
+        document.getElementById("loginForm").addEventListener("submit", function(event) {
+            event.preventDefault();
+            
+            // Aquí debes agregar código para enviar los datos de inicio de sesión al servidor
+            // y verificar si las credenciales son válidas.
+            
+            // Por ahora, mostraremos un mensaje de éxito y mostraremos el botón de redirección.
+            document.getElementById("message").textContent = "Inicio de sesión exitoso.";
+            document.getElementById("redirectToQuestionnaire").style.display = "block";
+        });
+
+        // Manejar el clic en el botón de redirección
+        document.getElementById("redirectToQuestionnaire").addEventListener("click", function() {
+            // Redirigir al usuario a la página del cuestionario o cualquier otra página que desees.
+            window.location.href = "pagina_del_cuestionario.html";
+        });
+    </script>
     <section>
         <h1>Cuadro de Lista y Texto</h1>
             <!-- Cuadro de texto para ingresar elementos -->
@@ -45,16 +67,5 @@
             });
         }
       </script>
-      <script>
-        document.getElementById("loginForm").addEventListener("submit", function(event) {
-            event.preventDefault();
-            
-            // Aquí debes agregar código para enviar los datos de inicio de sesión al servidor
-            // y verificar si las credenciales son válidas.
-            
-            // Por ahora, mostraremos un mensaje de éxito.
-            document.getElementById("message").textContent = "Inicio de sesión exitoso.";
-        });
-    </script>
 </body>
 </html>
