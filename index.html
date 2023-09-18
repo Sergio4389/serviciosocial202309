@@ -10,6 +10,15 @@
     <link rel="apple-touch-icon" href="./icono_144.png">
 </head>
 <body>
+    <h2>Iniciar sesión</h2>
+    <form id="loginForm">
+        <label for="username">Nombre de usuario:</label>
+        <input type="text" id="username" name="username" required><br><br>
+        <label for="password">Contraseña:</label>
+        <input type="password" id="password" name="password" required><br><br>
+        <input type="submit" value="Iniciar sesión">
+    </form>
+     <div id="message"></div>
     <section>
         <h1>Cuadro de Lista y Texto</h1>
             <!-- Cuadro de texto para ingresar elementos -->
@@ -36,6 +45,16 @@
             });
         }
       </script>
-      
+      <script>
+        document.getElementById("loginForm").addEventListener("submit", function(event) {
+            event.preventDefault();
+            
+            // Aquí debes agregar código para enviar los datos de inicio de sesión al servidor
+            // y verificar si las credenciales son válidas.
+            
+            // Por ahora, mostraremos un mensaje de éxito.
+            document.getElementById("message").textContent = "Inicio de sesión exitoso.";
+        });
+    </script>
 </body>
 </html>
